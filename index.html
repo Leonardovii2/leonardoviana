@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonardo Viana</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <a href="./index.html"
+          ><img class="logo" src="./assets/logo2.png" alt="logo"
+        /></a>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#fourthSection">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fourthSection">Formação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sectionsFooter">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="./assets/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#thirdSection">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fourthSection">Formação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sectionsFooter">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="primarySection">
+        <div class="presentation">
+          <h1>Desenvolvedor<br />Front End</h1>
+          <p>Seu site, sua identidade, nossas soluções personalizadas.</p>
+          <p>Dourados - MS</p>
+        </div>
+        <div class="losango">
+          <img src="./assets/ew.jpg" alt="" />
+        </div>
+      </section>
+
+      <section id="secondSection" class="secondSection">
+        <h1>Sobre mim</h1>
+        <p>
+          Me chamo Leonardo, sou desenvolvedor Front End e estou no 4º semestre
+          de Engenharia de Software. Trabalho com HTML, CSS, JavaScript e React
+          para criar interfaces modernas, dinâmicas e responsivas. Também tenho
+          experiência com Node.js e Express no desenvolvimento de APIs,
+          utilizando PostgreSQL como banco de dados. Busco sempre aplicar boas
+          práticas para entregar soluções eficientes, focadas em qualidade e
+          usabilidade.
+        </p>
+      </section>
+
+      <section id="thirdSection" class="thirdSection">
+        <h1>Projetos</h1>
+
+        <div class="containerThirdSection">
+          <div class="card">
+            <img src="./assets/partjar.png" alt="" />
+            <div class="card-conteudo">
+              <h2>Partjar</h2>
+              <p>
+                PartJar é uma agência de turismo que oferece viagens
+                personalizadas e sem complicações.
+              </p>
+              <div class="buttons">
+                <button class="button1">
+                  <a href="https://partjar.vercel.app/" target="_blank"
+                    >Ver projeto</a
+                  >
+                </button>
+                <button class="button2">
+                  <a
+                    href="https://github.com/Leonardovii2/landingpage-partjar"
+                    target="_blank"
+                    >Código</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fourthSection" class="fourthSection">
+        <h1>Formação</h1>
+        <p class="descricao">
+          Sou estudante de Engenharia de Software, com previsão de conclusão em
+          2027. Durante o curso, busco ampliar minha base teórica em computação,
+          algoritmos e desenvolvimento de software, além de explorar
+          metodologias ágeis e gestão de projetos. Para complementar minha
+          formação, faço cursos intensivos online que ampliam minha visão
+          prática e técnica.
+        </p>
+
+        <div class="containerSectionFormacao">
+          <div id="tecnico" class="tecnico">
+            <h2>TÉCNICO</h2>
+            <p>Informática</p>
+            <h3>2023</h3>
+            <p>IFMS</p>
+          </div>
+
+          <div id="bacharel" class="bacharel">
+            <h2>BACHAREL</h2>
+            <p>Engenharia de Software</p>
+            <h3>2027</h3>
+            <p>UNIGRAN</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="sectionsFooter">
+      <section class="firstSectionFooter">
+        <h1>Entre em contato comigo</h1>
+        <div class="containerFooter">
+          <div class="linkedin">
+            <h3>Linkedin</h3>
+            <a href=""
+              ><img
+                class="logosFooter"
+                src="./assets/linkedin.png"
+                alt="logo linkedin"
+            /></a>
+            <p>Leonardovii2</p>
+          </div>
+          <div class="email">
+            <h3>Email</h3>
+            <a href=""
+              ><img
+                class="logosFooter"
+                src="./assets/o-email.png"
+                alt="logo email"
+            /></a>
+            <p>leorocha11@outlook.com</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="secondSectionFooter">
+        <p>Todos Direitos Reservados © Leonardo Viana</p>
+      </section>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

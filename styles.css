@@ -1,0 +1,429 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #acd1dd;
+  box-shadow: 0px 1px 8px #464646;
+}
+
+.logo {
+  width: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.login-button button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #0187a7;
+}
+
+.login-button button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Quando o menu estiver aberto */
+.mobile-menu.open {
+  max-height: 500px; /* ajustar conforme o conteúdo */
+  opacity: 1;
+}
+
+/* ===== Main ===== */
+.losango img {
+  width: 320px;
+  height: 350px;
+  border-radius: 81px;
+}
+
+.primarySection {
+  display: flex;
+  justify-content: space-between;
+  margin: 12rem 30rem;
+  align-items: center;
+}
+
+.presentation h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 1.5rem;
+}
+
+.presentation p {
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.secondSection {
+  background-color: rgba(172, 209, 221, 0.1);
+  width: 100%;
+  height: auto;
+  padding: 5rem 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secondSection h1 {
+  font-size: 1.8rem;
+  padding-bottom: 1.5rem;
+}
+
+.secondSection p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.thirdSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+.thirdSection h1 {
+  font-size: 28px;
+}
+
+.containerThirdSection {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  background-color: rgba(172, 209, 221, 0.1);
+  width: 21rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-conteudo {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-conteudo p {
+  line-height: 1.3rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.button1 {
+  background-color: #acd1dd;
+  border: none;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.button2 {
+  background-color: #ffffff;
+  border: 2px solid #acd1dd;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button1 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button2 a {
+  text-decoration: none;
+  color: #96bcc7;
+}
+
+.button1:hover {
+  background-color: #96bcc7;
+}
+
+.fourthSection {
+  width: 100%;
+  height: auto;
+  background-color: rgba(172, 209, 221, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 35rem;
+}
+
+.fourthSection h1 {
+  font-size: 1.8rem;
+}
+
+.fourthSection p {
+  line-height: 1.5rem;
+}
+
+.descricao {
+  padding: 2rem 5rem;
+  line-height: 1.2rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.containerSectionFormacao {
+  display: flex;
+}
+
+.bacharel {
+  padding-bottom: 3rem;
+}
+
+.tecnico,
+.bacharel {
+  line-height: 1.8rem;
+  background-color: #acd1dd;
+  width: 20rem;
+  height: auto;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.bacharel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.tecnico:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.tecnico {
+  margin-right: 3rem;
+}
+
+.firstSectionFooter {
+  width: 100%;
+  background-color: rgba(172, 209, 221, 0.5);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.firstSectionFooter h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.secondSectionFooter {
+  background-color: #acd1dd;
+}
+
+.logosFooter {
+  width: 2rem;
+  padding: 0.5rem 0;
+}
+
+.containerFooter {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40rem;
+}
+
+.linkedin,
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secondSectionFooter p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 0.5rem;
+    align-items: center;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    background-color: rgba(
+      172,
+      209,
+      221,
+      0.85
+    ); /* mesmo fundo branco transparente */
+    backdrop-filter: blur(4px);
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  /* Main responsive */
+  .losango img {
+    width: 240px;
+    height: 260px;
+    border-radius: 71px;
+  }
+
+  .primarySection {
+    margin: 3rem 3rem 0;
+    flex-direction: column-reverse;
+  }
+
+  .presentation h1 {
+    font-size: 37px;
+    margin: 1.5rem 0 1.5rem 0;
+  }
+
+  .presentation p {
+    font-size: 18px;
+  }
+
+  .secondSection {
+    padding: 5rem 3rem;
+  }
+
+  .containerThirdSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .fourthSection {
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+
+  .containerSectionFormacao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tecnico {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .descricao {
+    padding: 3rem 3rem;
+    line-height: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .containerFooter {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .email {
+    padding-top: 2rem;
+  }
+}
